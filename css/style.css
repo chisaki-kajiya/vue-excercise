@@ -1,0 +1,58 @@
+/* 切り替えタブ */
+.tab-menu {
+  display: flex;
+}
+
+.tab-menu__item {
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  list-style: none;
+  width: 100px;
+  border: 1px solid lightgrey;
+}
+
+.tab-menu__item:not(:first-child) {
+  border-left: none;
+}
+
+.tab-menu__item.active {
+  background: #000;
+  color: white;
+}
+
+/* モーダルウィンドウ */
+.modal__content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+}
+
+.modal__content-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+
+.modal__content-inner {
+  background-color: white;
+  text-align: center;
+  padding: 50px 100px;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  margin: auto;
+}
+
+.closeBtn {
+  margin-top: 50px;
+}
+
+/* リアルタイム検索 */
+.search-box {
+  border-color: lightgreen;
+}
